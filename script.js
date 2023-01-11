@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 //if (js === "amazing") alert("Javascript is FUN!");
 
@@ -22,3 +23,24 @@ let myFirstJob = "Programming";
 let myCurrentJob = "Coder";
 
 console.log(myCurrentJob);
+*/
+
+let javascriptIsFun = true;
+console.log(typeof javascriptIsFun);
+
+// console.log(typeof false);
+// console.log(typeof 23);
+// console.log(typeof "Prabu");
+
+javascriptIsFun = "YES!";
+console.log(typeof javascriptIsFun);
+
+let person;
+person = "female";
+console.log(person);
+console.log(typeof person);
+
+// Error in Javascript
+let test = null;
+console.log(test);
+console.log(typeof test);
