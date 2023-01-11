@@ -47,6 +47,7 @@ console.log(test);
 console.log(typeof test);
 */
 
+/*
 let age = 23;
 age = 24;
 console.log(age);
@@ -57,3 +58,34 @@ const gender = "male";
 
 var job = "programmer";
 job = "bouncher";
+*/
+
+// Math Operator
+const now = 2035;
+const agePrabu = now - 1999;
+const ageSarah = now - 2009;
+console.log(agePrabu, ageSarah);
+console.log(agePrabu * 2, ageSarah / 2, 2 ** 3);
+// 2 ** 3 means 2 to the power to 3 = 2*2*2
+
+const firstName = "Prabu";
+const lastName = "Hadi";
+console.log(firstName + " " + lastName);
+
+// Assignments Operator
+let x = 22 + 33; // 55
+x += 10; // x = x + 10
+x += 5;
+x++;
+x--;
+console.log(x);
+
+// Comparison Operator
+console.log(agePrabu > ageSarah);
+console.log(agePrabu === ageSarah);
+console.log(ageSarah > agePrabu);
+console.log(ageSarah >= 20);
+// >, <. >=, <=
+
+const isAdult = ageSarah >= 18;
+console.log(isAdult);
