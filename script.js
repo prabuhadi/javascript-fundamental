@@ -25,6 +25,7 @@ let myCurrentJob = "Coder";
 console.log(myCurrentJob);
 */
 
+/*
 let javascriptIsFun = true;
 console.log(typeof javascriptIsFun);
 
@@ -44,3 +45,15 @@ console.log(typeof person);
 let test = null;
 console.log(test);
 console.log(typeof test);
+*/
+
+let age = 23;
+age = 24;
+console.log(age);
+
+const gender = "male";
+// gender = "female";
+// const price; ERROR
+
+var job = "programmer";
+job = "bouncher";
