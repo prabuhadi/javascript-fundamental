@@ -92,6 +92,7 @@ const isAdult = ageSarah >= 18;
 console.log(isAdult);
 */
 
+/*
 // Operator Precedence
 console.log(25 - 10 - 5);
 
@@ -101,3 +102,61 @@ console.log(x, y);
 
 const averageAge = (agePrabu + ageSarah) / 2;
 console.log(agePrabu, ageSarah, averageAge);
+*/
+
+const firstName = "Prabu";
+const job = "Developer";
+const birthYear = 1999;
+const year = 2023;
+
+const prabu =
+  "Helloo. I'm " +
+  firstName +
+  ", a " +
+  (year - birthYear) +
+  " years old " +
+  job +
+  "!";
+console.log(prabu);
+
+// Template Literal
+const prabuNew = `Helloo, I'm ${firstName}, a ${
+  year - birthYear
+} years old ${job}!`;
+console.log(prabuNew);
+
+console.log(`This is just regular string...`);
+
+console.log(
+  "This is \n\
+String \n\
+With \n\
+Multiple \n\
+Line"
+);
+
+console.log(`This
+is
+String
+With
+Multiple
+Line`);
+
+// Decision State
+const age = 16;
+const isLegal = age >= 18;
+
+if (isLegal) {
+  console.log("Stella can buy alcohol ✔"); // WIndows + . = Win, CMD + CRTL + SPACE = Mac
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Stella should study more 👍 for ${yearsLeft} year more`);
+}
+
+let century;
+if (birthYear >= 2000) {
+  century = 21;
+} else {
+  century = 20;
+}
+console.log(century);
