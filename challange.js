@@ -26,3 +26,5 @@ const bodyMassIndex4 = johnWeight2 / (johnHeight2 * johnHeight2);
 console.log(bodyMassIndex4);
 
 console.log(bodyMassIndex3 >= bodyMassIndex4);
+
+// Coding Challange #2

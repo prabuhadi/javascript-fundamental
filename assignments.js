@@ -1,7 +1,7 @@
 // Assignments 1
 const countryName = "Japan";
 const continent = "Asia";
-const populationNumber = 125700000;
+const populationNumber = 125;
 
 // console.log(countryName);
 // console.log(continent);
@@ -29,13 +29,13 @@ quarterPopulation++;
 // console.log(halfPopulation / 2);
 
 // Finland has 6 million population
-const populationFinland = 6000000;
+const populationFinland = 6;
 // console.log(populationNumber > populationFinland);
-// console.log(quarterPopulation > 6000000);
+// console.log(quarterPopulation > 6);
 
-const averagePopulation = 33000000;
+const averagePopulation = 33;
 // console.log(populationNumber < averagePopulation);
-// console.log(quarterPopulation < 33000000);
+// console.log(quarterPopulation < 33);
 
 // const description =
 //   countryName +
@@ -44,3 +44,17 @@ const averagePopulation = 33000000;
 //   " people speak " +
 //   language;
 // console.log(description);
+
+// Assignments 5
+const description = `${countryName} is in ${continent}, and it's have population around ${populationNumber} million and most of them speak ${language}`;
+console.log(description);
+
+// Assignments 6
+const needPopulation = 33 - populationNumber;
+if (populationNumber > 33) {
+  console.log(`${countryName}'s population is above average.`);
+} else {
+  console.log(
+    `${countryName}'s population is ${needPopulation} million below average`
+  );
+}
