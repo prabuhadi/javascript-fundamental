@@ -64,6 +64,7 @@ job = "bouncher";
 const now = 2035;
 const agePrabu = now - 1999;
 const ageSarah = now - 2009;
+/*
 console.log(agePrabu, ageSarah);
 console.log(agePrabu * 2, ageSarah / 2, 2 ** 3);
 // 2 ** 3 means 2 to the power to 3 = 2*2*2
@@ -89,3 +90,14 @@ console.log(ageSarah >= 20);
 
 const isAdult = ageSarah >= 18;
 console.log(isAdult);
+*/
+
+// Operator Precedence
+console.log(25 - 10 - 5);
+
+let x, y;
+x = y = 25 - 10 - 5; // subtraction comes first
+console.log(x, y);
+
+const averageAge = (agePrabu + ageSarah) / 2;
+console.log(agePrabu, ageSarah, averageAge);
