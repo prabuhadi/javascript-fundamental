@@ -117,7 +117,7 @@ const prabu =
   " years old " +
   job +
   "!";
-console.log(prabu);
+// console.log(prabu);
 
 // Template Literal
 const prabuNew = `Helloo, I'm ${firstName}, a ${
@@ -125,22 +125,22 @@ const prabuNew = `Helloo, I'm ${firstName}, a ${
 } years old ${job}!`;
 console.log(prabuNew);
 
-console.log(`This is just regular string...`);
+// console.log(`This is just regular string...`);
 
-console.log(
-  "This is \n\
-String \n\
-With \n\
-Multiple \n\
-Line"
-);
+// console.log(
+//   "This is \n\
+// String \n\
+// With \n\
+// Multiple \n\
+// Line"
+// );
 
-console.log(`This
-is
-String
-With
-Multiple
-Line`);
+// console.log(`This
+// is
+// String
+// With
+// Multiple
+// Line`);
 
 // Decision State
 const age = 16;
@@ -160,3 +160,25 @@ if (birthYear >= 2000) {
   century = 20;
 }
 console.log(century);
+
+//Type conversion
+const inputYear = "1991";
+console.log(inputYear + 23);
+console.log(Number(inputYear) + 31, inputYear);
+
+//string number
+console.log(Number("2B"));
+console.log(typeof NaN);
+
+//Left is string right is number
+console.log(String(23), 23);
+
+//Type coercion
+console.log("I'm " + 23 + " years old"); //number become string
+console.log("23" + "13" + 10);
+console.log("23" * "13");
+console.log("40" / "2");
+
+let n = "1" + 1; //11
+n = n - 1;
+console.log(n);
