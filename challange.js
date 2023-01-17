@@ -50,3 +50,62 @@ if (bodyMassIndex3 > bodyMassIndex4) {
     `John's BMI (${bodyMassIndex4}) is higher than Mark's (${bodyMassIndex3})!`
   );
 }
+
+// Coding Challange #3
+
+// Data 1
+// const dolphinsTest1 = 96;
+// const dolphinsTest2 = 108;
+// const dolphinsTest3 = 89;
+
+// const koalasTest1 = 88;
+// const koalasTest2 = 91;
+// const koalasTest3 = 110;
+
+// const doplhinsScore = Number(
+//   (dolphinsTest1 + dolphinsTest2 + dolphinsTest3) / 3
+// );
+// const koalasScore = Number((koalasTest1 + koalasTest2 + koalasTest3) / 3);
+
+// console.log(doplhinsScore);
+// console.log(koalasScore);
+
+// if (doplhinsScore > koalasScore) {
+//   console.log(`Dolphins wins a trophy! 🏆 with average score ${doplhinsScore}`);
+// } else if (koalasScore > doplhinsScore) {
+//   console.log(`Koalas wins a thropy! 🏆 with average score ${koalasScore}`);
+// } else if (doplhinsScore === koalasScore) {
+//   console.log(`Both teams wins a thropy!`);
+// }
+
+// Bonus 1
+
+const dolphinsTest1 = 97;
+const dolphinsTest2 = 122;
+const dolphinsTest3 = 101;
+
+const koalasTest1 = 99;
+const koalasTest2 = 115;
+const koalasTest3 = 106;
+
+const doplhinsScore = Number(
+  (dolphinsTest1 + dolphinsTest2 + dolphinsTest3) / 3
+);
+const koalasScore = Number((koalasTest1 + koalasTest2 + koalasTest3) / 3);
+
+console.log(doplhinsScore);
+console.log(koalasScore);
+
+if (doplhinsScore > koalasScore && doplhinsScore >= 100) {
+  console.log(`Dolphins wins a trophy! 🏆 with average score ${doplhinsScore}`);
+} else if (koalasScore > doplhinsScore && koalasScore >= 100) {
+  console.log(`Koalas wins a thropy! 🏆 with average score ${koalasScore}`);
+} else if (
+  doplhinsScore === koalasScore &&
+  doplhinsScore >= 100 &&
+  koalasScore >= 100
+) {
+  console.log(`Both teams wins a thropy!`);
+} else {
+  console.log(`No one got thropy 😭`);
+}
