@@ -150,7 +150,7 @@ if (isLegal) {
   console.log("Stella can buy alcohol ✔"); // WIndows + . = Win, CMD + CRTL + SPACE = Mac
 } else {
   const yearsLeft = 18 - age;
-  console.log(`Stella should study more 👍 for ${yearsLeft} year more`);
+  // console.log(`Stella should study more 👍 for ${yearsLeft} year more`);
 }
 
 let century;
@@ -159,26 +159,76 @@ if (birthYear >= 2000) {
 } else {
   century = 20;
 }
-console.log(century);
+// console.log(century);
 
 //Type conversion
 const inputYear = "1991";
-console.log(inputYear + 23);
-console.log(Number(inputYear) + 31, inputYear);
+// console.log(inputYear + 23);
+// console.log(Number(inputYear) + 31, inputYear);
 
 //string number
-console.log(Number("2B"));
-console.log(typeof NaN);
+// console.log(Number("2B"));
+// console.log(typeof NaN);
 
 //Left is string right is number
-console.log(String(23), 23);
+// console.log(String(23), 23);
 
 //Type coercion
-console.log("I'm " + 23 + " years old"); //number become string
-console.log("23" + "13" + 10);
-console.log("23" * "13");
-console.log("40" / "2");
+// console.log("I'm " + 23 + " years old"); //number become string
+// console.log("23" + "13" + 10);
+// console.log("23" * "13");
+// console.log("40" / "2");
 
 let n = "1" + 1; //11
 n = n - 1;
-console.log(n);
+// console.log(n);
+
+// 5 falsy value: 0, '', undefined, null, NaN
+
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// console.log(Boolean({}));
+
+// const money = 0;
+// if (money) {
+//   console.log("Don't spend it all!");
+// } else {
+//   console.log("You should get a job!");
+// }
+
+// let height;
+// if (height) {
+//   console.log("YAY! height is defined");
+// } else {
+//   console.log("Height is undefined");
+// }
+
+const ageMe = "18";
+if (ageMe === 18) {
+  // console.log(`You just become an adult (strict)`);
+}
+// use strict operator to avoid bug
+if (ageMe == 18) {
+  // console.log(`You just become an adult (loose)`);
+}
+
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite === 33) {
+//   console.log(`Cool! 33 is an amazing number!`);
+// } else if (favourite === 22) {
+//   console.log(`22 is also an amazing number!`);
+// } else if (favourite === 69) {
+//   console.log(`69 is also an amazing number!`);
+// } else {
+//   console.log(`Number is not 33 and 22`);
+// }
+
+// if (favourite !== 69) {
+//   console.log(`Why not 69?`);
+// }
