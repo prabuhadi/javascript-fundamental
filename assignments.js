@@ -58,3 +58,10 @@ if (populationNumber > 33) {
     `${countryName}'s population is ${needPopulation} million below average`
   );
 }
+
+// Assignments 6
+console.log("9" - "5"); //4
+console.log("19" - "13" + "17"); //617
+console.log("19" - "13" + 17); //23
+console.log(typeof "123" < typeof 57); //false
+console.log(5 + 6 + "4" + 9 - 4 - 2); //99
