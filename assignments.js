@@ -47,17 +47,17 @@ const averagePopulation = 33;
 
 // Assignments 5
 const description = `${countryName} is in ${continent}, and it's have population around ${populationNumber} million and most of them speak ${language}`;
-console.log(description);
+// console.log(description);
 
 // Assignments 6
 const needPopulation = 33 - populationNumber;
-if (populationNumber > 33) {
-  console.log(`${countryName}'s population is above average.`);
-} else {
-  console.log(
-    `${countryName}'s population is ${needPopulation} million below average`
-  );
-}
+// if (populationNumber > 33) {
+//   console.log(`${countryName}'s population is above average.`);
+// } else {
+//   console.log(
+//     `${countryName}'s population is ${needPopulation} million below average`
+//   );
+// }
 
 // Assignments 6
 // console.log("9" - "5"); //4
