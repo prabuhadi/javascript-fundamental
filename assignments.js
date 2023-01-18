@@ -67,10 +67,10 @@ const needPopulation = 33 - populationNumber;
 // console.log(5 + 6 + "4" + 9 - 4 - 2); //99
 
 // Assignments 7
+// // if const not define as number it's creeate bug
 // const numNeighbours = Number(
 //   prompt(`How many neighbour countries does your country have?`)
 // );
-// if const not define as number it's creeate bug
 // console.log(numNeighbours);
 // if (numNeighbours === 1) {
 //   console.log(`Only 1 border`);
@@ -79,3 +79,59 @@ const needPopulation = 33 - populationNumber;
 // } else {
 //   console.log(`No border`);
 // }
+
+// Assignments 8
+const hasCertificate = true;
+const isSingle = true;
+const isHealthy = false;
+const hasVisa = false;
+
+const liveAboard = (hasCertificate && hasVisa) || (isHealthy && hasVisa);
+
+if (liveAboard) {
+  console.log(`Prabu is eligible to Live Overseas! ✔`);
+} else {
+  console.log(`Prabu is not yet eligible but still can live overseas 👍`);
+}
+
+if (hasCertificate && isSingle && isHealthy && hasVisa) {
+  console.log(`You should live in United States`);
+} else if ((hasCertificate && isHealthy && hasVisa) || isSingle) {
+  console.log(`You should live in Japan`);
+} else if ((hasCertificate && hasVisa) || (isHealthy && isSingle)) {
+  console.log(`You should live in Australia`);
+} else if (hasCertificate || (hasVisa && isHealthy && isSingle)) {
+  console.log(`You should live in Singapore`);
+} else {
+  console.log(`You're not meet any criteria, unless you live in Philipinese`);
+}
+
+if (language === "Japanese" && populationNumber > 50 && isIsland) {
+  console.log(`You should live in ${countryName} ✔`);
+} else {
+  console.log(`You should try live in Singapore first`);
+}
+
+// Assignment 9
+const popularLanguage = "English";
+
+switch (popularLanguage) {
+  case "Chinese":
+  case "Mandarin":
+    console.log(`Most number of native speakers!`);
+    break;
+  case "Spanish":
+    console.log(`2nd place in number of native speakers`);
+    break;
+  case "English":
+    console.log(`3rd place in number of native speakers`);
+    break;
+  case "Hindi":
+    console.log(`4th place`);
+    break;
+  case "Arabic":
+    console.log(`5th most speaken language`);
+    break;
+  default:
+    console.log(`Great language too 😊`);
+}
