@@ -133,3 +133,13 @@ const finalValue = bill * tip + bill;
 console.log(
   `The bill was ${bill}, the tip was ${tips}, and the total value is ${finalValue}`
 );
+
+// Review
+
+const tagihan = 40;
+const pajak = tagihan <= 300 && tagihan >= 50 ? tagihan * 0.15 : tagihan * 0.2;
+console.log(
+  `Jumlah tagihan adalah ${tagihan} dengan pajak ${pajak}, total pembayaran adalah ${
+    tagihan + pajak
+  }`
+);
