@@ -30,26 +30,26 @@ const bodyMassIndex4 = johnWeight2 / (johnHeight2 * johnHeight2);
 // Coding Challange #2
 
 // Data 1
-if (bodyMassIndex1 > bodyMassIndex2) {
-  console.log(
-    `Mark's BMI (${bodyMassIndex1}) is higher than John's (${bodyMassIndex2})!`
-  );
-} else {
-  console.log(
-    `John's BMI(${bodyMassIndex2}) is higher than Mark's (${bodyMassIndex1})!`
-  );
-}
+// if (bodyMassIndex1 > bodyMassIndex2) {
+//   console.log(
+//     `Mark's BMI (${bodyMassIndex1}) is higher than John's (${bodyMassIndex2})!`
+//   );
+// } else {
+//   console.log(
+//     `John's BMI(${bodyMassIndex2}) is higher than Mark's (${bodyMassIndex1})!`
+//   );
+// }
 
-// Data 2
-if (bodyMassIndex3 > bodyMassIndex4) {
-  console.log(
-    `Mark's BMI (${bodyMassIndex3}) is higher than John's (${bodyMassIndex4})!`
-  );
-} else {
-  console.log(
-    `John's BMI (${bodyMassIndex4}) is higher than Mark's (${bodyMassIndex3})!`
-  );
-}
+// // Data 2
+// if (bodyMassIndex3 > bodyMassIndex4) {
+//   console.log(
+//     `Mark's BMI (${bodyMassIndex3}) is higher than John's (${bodyMassIndex4})!`
+//   );
+// } else {
+//   console.log(
+//     `John's BMI (${bodyMassIndex4}) is higher than Mark's (${bodyMassIndex3})!`
+//   );
+// }
 
 // Coding Challange #3
 
@@ -93,19 +93,43 @@ const doplhinsScore = Number(
 );
 const koalasScore = Number((koalasTest1 + koalasTest2 + koalasTest3) / 3);
 
-console.log(doplhinsScore);
-console.log(koalasScore);
+// console.log(doplhinsScore);
+// console.log(koalasScore);
 
-if (doplhinsScore > koalasScore && doplhinsScore >= 100) {
-  console.log(`Dolphins wins a trophy! 🏆 with average score ${doplhinsScore}`);
-} else if (koalasScore > doplhinsScore && koalasScore >= 100) {
-  console.log(`Koalas wins a thropy! 🏆 with average score ${koalasScore}`);
-} else if (
-  doplhinsScore === koalasScore &&
-  doplhinsScore >= 100 &&
-  koalasScore >= 100
-) {
-  console.log(`Both teams wins a thropy!`);
-} else {
-  console.log(`No one got thropy 😭`);
-}
+// if (doplhinsScore > koalasScore && doplhinsScore >= 100) {
+//   console.log(`Dolphins wins a trophy! 🏆 with average score ${doplhinsScore}`);
+// } else if (koalasScore > doplhinsScore && koalasScore >= 100) {
+//   console.log(`Koalas wins a thropy! 🏆 with average score ${koalasScore}`);
+// } else if (
+//   doplhinsScore === koalasScore &&
+//   doplhinsScore >= 100 &&
+//   koalasScore >= 100
+// ) {
+//   console.log(`Both teams wins a thropy!`);
+// } else {
+//   console.log(`No one got thropy 😭`);
+// }
+
+// Coding Challange #4
+
+// Data 1
+const bill = 375;
+let tip;
+
+// Using If/else statement
+
+// if (bill >= 50 && bill <= 300) {
+//   tip = 15 / 100;
+// } else {
+//   tip = 20 / 100;
+// }
+// console.log(finalValue);
+
+// Using teranry statement
+bill >= 50 && bill <= 300 ? (tip = 15 / 100) : (tip = 20 / 100);
+
+const tips = bill * tip;
+const finalValue = bill * tip + bill;
+console.log(
+  `The bill was ${bill}, the tip was ${tips}, and the total value is ${finalValue}`
+);
