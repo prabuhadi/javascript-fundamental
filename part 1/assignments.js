@@ -135,3 +135,10 @@ switch (popularLanguage) {
   default:
     console.log(`Great language too 😊`);
 }
+
+// Assignment 10
+// populationNumber >= 33 ? console.log("above") : console.log("below");
+
+console.log(
+  `Japan population is ${populationNumber >= 33 ? "above" : "below"} average`
+);
