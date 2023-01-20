@@ -4,34 +4,34 @@ let hasDriverLicense = false;
 const passTest = true;
 
 if (passTest) hasDriverLicense = true;
-if (hasDriverLicense) console.log(`I can drive :D`);
+// if (hasDriverLicense) console.log(`I can drive :D`);
 
 // const interface = "Audio";
 // const private = 123;
 
 function logger() {
-  console.log(`My name is Prabu`);
+  // console.log(`My name is Prabu`);
 }
 
 // calling / running / invoking function
-logger();
+// logger();
 
-function fruitProcessor(apple, oranges) {
-  const juice = `Juice with ${apple} apples and ${oranges} oranges`;
-  return juice;
-}
+// function fruitProcessor(apple, oranges) {
+//   const juice = `Juice with ${apple} apples and ${oranges} oranges`;
+//   return juice;
+// }
 
 // console.log(apple, oranges);
 // fruitProcessor(5, 2);
 // return juice is function in fruitProcessing
-const juice = fruitProcessor(5, 2);
-console.log(juice);
+// const juice = fruitProcessor(5, 2);
+// console.log(juice);
 
-const orangeJuice = fruitProcessor(0, 4);
-console.log(orangeJuice);
+// const orangeJuice = fruitProcessor(0, 4);
+// console.log(orangeJuice);
 
-const num = Number("33");
-console.log(num);
+// const num = Number("33");
+// console.log(num);
 
 // simplified functino declaration
 const age1 = calcAge(1999);
@@ -73,3 +73,19 @@ const yearRetirement = yearUntilRetirement(1999, "Jonas");
 console.log(yearRetirement);
 console.log(yearUntilRetirement(1991, "Bob"));
 console.log(yearUntilRetirement(1988, "Andy"));
+
+// Function inside function
+
+function cutFruitPieces(fruit) {
+  return fruit * 5;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges`;
+  return juice;
+}
+
+console.log(fruitProcessor(3, 2));
