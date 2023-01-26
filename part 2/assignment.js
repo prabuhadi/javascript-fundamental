@@ -83,3 +83,17 @@ const percentages = [
   percentageOfWorld2(populations[3]),
 ];
 console.log(percentages);
+
+// Assignment 6
+const neighbours = ["Japan", "USA", "Portugal", "China"];
+neighbours.push("Utopia");
+neighbours.pop();
+console.log(neighbours.includes("Utopia"));
+neighbours[neighbours.indexOf("Portugal")] = "Republic of Portugal";
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log(`It's European Country`);
+} else {
+  console.log(`Probably not a central European Country`);
+}
