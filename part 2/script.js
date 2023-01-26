@@ -110,3 +110,49 @@ const yearUntilRetirement = function (birthYear, firstName) {
 
 yearUntilRetirement(1976, "Jonas");
 yearUntilRetirement(1955, "Mike");
+
+const today = new Date();
+const currentYear = today.getFullYear();
+// console.log(currentYear);
+
+// Array
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friend = ["Michael", "Steven", "Peter"];
+console.log(friend);
+friend[2] = "Jay";
+// friend = ["A", "B", "C"]; Cannot change entire array
+console.log(friend);
+
+const year = new Array(1999, 2009, 2019, 2023);
+console.log(year[3]);
+console.log(year[1]);
+console.log(year.length);
+console.log(year[year.length - 1]);
+
+const firstName = "Prabu";
+const prabu = [firstName, "Hadi", currentYear - 1999, "Developer", friend];
+console.log(prabu.length);
+
+// Exercise
+function calcAge(birthYear) {
+  const age = 2023 - birthYear;
+  return age;
+}
+const years = [1992, 1995, 1997, 1999, 2000, 2002];
+// console.log(calcAge(years)); Wrong
+const lineAge1 = calcAge(years[0]);
+const lineAge2 = calcAge(years[1]);
+const lineAge3 = calcAge(years[2]);
+const lineAge4 = calcAge(years[years.length - 1]);
+console.log(lineAge1, lineAge2, lineAge3, lineAge4);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[2]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);

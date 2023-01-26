@@ -8,16 +8,20 @@ function describeCountry(country, population, capitalCity) {
 const describeFinland = describeCountry("Finland", 6, "Helsinki");
 const describePortugal = describeCountry("Portugal", 33, "Lisbon");
 const describeEngland = describeCountry("England", 80, "London");
-console.log(describeFinland);
-console.log(describePortugal);
-console.log(describeEngland);
+// console.log(describeFinland);
+// console.log(describePortugal);
+// console.log(describeEngland);
 
 // Assignment 2
 
 // Function Expression
-// const worldPopulation = function percentageOfWorld1(countryPopulation) {
+// const worldPopulation1 = function percentageOfWorld1(countryPopulation) {
 //   return (countryPopulation / 7900) * 100;
 // };
+
+const percentageOfWorld1 = function (population) {
+  return (countryPopulation / 7900) * 100;
+};
 
 // const chinaPopulation = worldPopulation(1441);
 // const indonesiaPopulation = worldPopulation(1276);
@@ -41,6 +45,7 @@ const percentageOfWorld3 = (population) => (population / 7900) * 100;
 const percPortugal = percentageOfWorld3(10);
 const percChina = percentageOfWorld3(1441);
 const percUSA = percentageOfWorld3(332);
+const percJapan = percentageOfWorld3(127);
 console.log(percPortugal, percChina, percUSA);
 
 // Assignment 4
@@ -54,6 +59,27 @@ const describePopulation = function (country, population) {
   return `${country} has ${population} million people, which is about ${percentage}% of the world`;
 };
 
-console.log(describePopulation("China", 1441));
-console.log(describePopulation("Portugal", 10));
-console.log(describePopulation("USA", 332));
+// console.log(describePopulation("China", 1441));
+// console.log(describePopulation("Portugal", 10));
+// console.log(describePopulation("USA", 332));
+
+// Assignment 5
+const populationChina = 1444;
+const populationPortugal = 10;
+const populationUSA = 332;
+const populationJapan = 127;
+const populations = [
+  populationChina,
+  populationPortugal,
+  populationUSA,
+  populationJapan,
+];
+console.log(populations.length === 4);
+
+const percentages = [
+  percentageOfWorld2(populations[0]),
+  percentageOfWorld2(populations[1]),
+  percentageOfWorld2(populations[2]),
+  percentageOfWorld2(populations[3]),
+];
+console.log(percentages);
