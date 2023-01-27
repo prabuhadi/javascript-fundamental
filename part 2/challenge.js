@@ -61,3 +61,34 @@ const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(bills, tip);
 const total = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
 console.log(total);
+
+// Coding Challange #3
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    return this.mass / this.height ** 2;
+  },
+};
+
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    return this.mass / this.height ** 2;
+  },
+};
+// console.log(john, mark);
+
+const testBMI = john.calcBMI > mark.calcBMI;
+console.log(testBMI);
+// Ternary Functin
+console.log(
+  `${john.fullName} BMI (${john.calcBMI()}) is ${
+    testBMI ? "higher" : "lower"
+  } than ${mark.fullName} BMI ${mark.calcBMI()}`
+);
