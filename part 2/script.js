@@ -160,16 +160,16 @@ const ages = [
 // Array = use when have ordered value, retrieve value based on number squaence
 // Add element
 const friend = ["Michael", "Steven", "Peter"];
-const newLength = friend.push("Jane", "Ane", "Olive");
+const newLength = friend.push("Jane", "Ane", "Olive"); // Adding Last
 // console.log(newLength);
 
-friend.unshift("Rodriges");
+friend.unshift("Rodriges"); // Adding First
 
 // Remove element
 friend.pop(); // Last
 const popped = friend.pop(); // Last
 // console.log(popped);
-friend.shift();
+friend.shift(); // First
 // console.log(friend);
 
 // console.log(friend.indexOf("Jane"));
@@ -189,21 +189,21 @@ friend.unshift(23);
 // Object = use at unordered list, retrieve value based on name
 // has 5 key pairs, each key has value, each key can define as property
 // property of firstname with value prabu
-const prabu = {
-  firstName: "Prabu",
-  lastName: "Hadi",
-  age: currentYear - 1999,
-  job: "Web Developer",
-  friends: ["Moona", "Kaela", "Zeta"],
-};
+// const prabu = {
+//   firstName: "Prabu",
+//   lastName: "Hadi",
+//   age: currentYear - 1999,
+//   job: "Web Developer",
+//   friends: ["Moona", "Kaela", "Zeta"],
+// };
 
 // Dot and bracket Notation
-console.log(prabu.lastName);
-console.log(prabu["lastName"]);
+// console.log(prabu.lastName);
+// console.log(prabu["lastName"]);
 
 const nameKey = "Name";
-console.log(prabu["first" + nameKey]);
-console.log(prabu["last" + nameKey]);
+// console.log(prabu["first" + nameKey]);
+// console.log(prabu["last" + nameKey]);
 
 // const interestedIn = prompt(
 //   "What do you want to know about Prabu? Choose between firstName, lastName, age, job and friends"
@@ -218,9 +218,9 @@ console.log(prabu["last" + nameKey]);
 //   );
 // }
 
-prabu.location = "Indonesia";
-prabu["twitter"] = "@purippu2233";
-console.log(prabu);
+// prabu.location = "Indonesia";
+// prabu["twitter"] = "@purippu2233";
+// // console.log(prabu);
 
 // Challange
 // "Prabu has 3 friends, and his best friend is called Kaela"
@@ -239,6 +239,55 @@ console.log(prabu);
 // );
 
 // Effective way
-console.log(
-  `${prabu.firstName} has ${prabu.friends.length} friends, and his best friend is called ${prabu.friends[1]}`
-);
+// console.log(
+//   `${prabu.firstName} has ${prabu.friends.length} friends, and his best friend is called ${prabu.friends[1]}`
+// );
+
+// Object Method
+const prabu = {
+  firstName: "Prabu",
+  lastName: "Hadi",
+  birthYear: 1999,
+  job: "Web Developer",
+  friends: ["Moona", "Kaela", "Zeta"],
+  hasDriverLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return currentYear - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return currentYear - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = currentYear - this.birthYear;
+    return this.age;
+  },
+
+  getSummery: function () {
+    return `${this.firstName} is a ${this.calcAge()}-years old ${
+      this.job
+    }, and he has ${this.hasDriverLicense ? "a" : "no"} driver's license`;
+  },
+};
+
+// console.log(prabu.calcAge());
+
+// console.log(prabu.age);
+// console.log(prabu.age);
+// console.log(prabu.age);
+
+// console.log(prabu["calcAge"](1991));
+
+// Challange
+// "Prabu is a 24-years old developer, and he has a driver's license"
+
+console.log(prabu.getSummery());
+
+// console.log(
+//   `${prabu.firstName} is a ${prabu.age}-years old ${prabu.job}, and he has ${
+//     prabu.hasDriverLicense ? "a" : "no"
+//   } driver's license`
+// );

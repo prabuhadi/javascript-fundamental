@@ -99,21 +99,43 @@ if (!neighbours.includes("Germany")) {
 }
 
 // Assignment 7
+// const myCountry = {
+//   country: "Indonesia",
+//   capital: "Jakarta",
+//   language: "Bahasa",
+//   population: 280,
+//   neighbours: ["Japan", "USA", "Portugal", "China"],
+// };
+// console.log(myCountry);
+
+// Assignment 8
+// console.log(
+//   `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+// );
+
+// myCountry["population"] += 2; // Bracket Notation
+// console.log(myCountry.population);
+// myCountry.population -= 2; // Dot Notation
+// console.log(myCountry.population);
+
+// Assignment 9
 const myCountry = {
   country: "Indonesia",
   capital: "Jakarta",
   language: "Bahasa",
   population: 280,
   neighbours: ["Japan", "USA", "Portugal", "China"],
+  isIsland: true,
+
+  describe: function () {
+    return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`;
+  },
+
+  checkIsland: function () {
+    return `${this.country} is ${
+      this.isIsland ? "archpellego" : "not archpeleggo"
+    }`;
+  },
 };
-// console.log(myCountry);
-
-// Assignment 8
-console.log(
-  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
-);
-
-myCountry["population"] += 2;
-console.log(myCountry.population);
-const grow = (myCountry.population -= 2);
-console.log(grow);
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
