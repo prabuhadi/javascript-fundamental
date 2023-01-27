@@ -196,3 +196,49 @@ const prabu = {
   job: "Web Developer",
   friends: ["Moona", "Kaela", "Zeta"],
 };
+
+// Dot and bracket Notation
+console.log(prabu.lastName);
+console.log(prabu["lastName"]);
+
+const nameKey = "Name";
+console.log(prabu["first" + nameKey]);
+console.log(prabu["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Prabu? Choose between firstName, lastName, age, job and friends"
+// );
+// // console.log(prabu[interestedIn]);
+
+// if (prabu[interestedIn]) {
+//   console.log("Get to know : " + prabu[interestedIn]);
+// } else {
+//   console.log(
+//     `Please choose between firstName, lastName, age, job and friends`
+//   );
+// }
+
+prabu.location = "Indonesia";
+prabu["twitter"] = "@purippu2233";
+console.log(prabu);
+
+// Challange
+// "Prabu has 3 friends, and his best friend is called Kaela"
+
+// Basic Approach
+// console.log(prabu.firstName);
+// console.log(prabu.friends.length);
+// console.log(prabu.friends[0]);
+
+// console.log(
+//   prabu.firstName +
+//     ` has ` +
+//     prabu.friends.length +
+//     ` friends, and his best friend is called ` +
+//     prabu.friends[0]
+// );
+
+// Effective way
+console.log(
+  `${prabu.firstName} has ${prabu.friends.length} friends, and his best friend is called ${prabu.friends[1]}`
+);

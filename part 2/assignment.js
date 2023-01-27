@@ -106,4 +106,14 @@ const myCountry = {
   population: 280,
   neighbours: ["Japan", "USA", "Portugal", "China"],
 };
-console.log(myCountry);
+// console.log(myCountry);
+
+// Assignment 8
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+);
+
+myCountry["population"] += 2;
+console.log(myCountry.population);
+const grow = (myCountry.population -= 2);
+console.log(grow);
