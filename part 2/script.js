@@ -55,12 +55,12 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1999);
 
-console.log(age1, age2);
+// console.log(age1, age2);
 
 // Arrow function
 const calcAge3 = (birthYear) => 2030 - birthYear;
 const age3 = calcAge3(1999);
-console.log(age3);
+// console.log(age3);
 
 // const yearUntilRetirement = (birthYear, firstName) => {
 //   const age = 2040 - birthYear;
@@ -88,7 +88,7 @@ function fruitProcessor(apples, oranges) {
   return juice;
 }
 
-console.log(fruitProcessor(3, 2));
+// console.log(fruitProcessor(3, 2));
 
 // Reiviewing Function
 
@@ -157,30 +157,42 @@ const ages = [
 ];
 // console.log(ages);
 
+// Array = use when have ordered value, retrieve value based on number squaence
 // Add element
 const friend = ["Michael", "Steven", "Peter"];
 const newLength = friend.push("Jane", "Ane", "Olive");
-console.log(newLength);
+// console.log(newLength);
 
 friend.unshift("Rodriges");
 
 // Remove element
 friend.pop(); // Last
 const popped = friend.pop(); // Last
-console.log(popped);
+// console.log(popped);
 friend.shift();
-console.log(friend);
+// console.log(friend);
 
-console.log(friend.indexOf("Jane"));
-console.log(friend.indexOf("Rodriges"));
+// console.log(friend.indexOf("Jane"));
+// console.log(friend.indexOf("Rodriges"));
 
-console.log(friend.includes("Jane"));
-console.log(friend.includes("Rodriges"));
+// console.log(friend.includes("Jane"));
+// console.log(friend.includes("Rodriges"));
 friend.unshift(23);
-console.log(friend.includes(23)); // include using strict equal
+// console.log(friend.includes(23)); // include using strict equal
 
-if (friend.includes("Peter")) {
-  console.log(`You have friend names Peter`);
-} else {
-  console.log(`You don't have any friend names Peter`);
-}
+// if (friend.includes("Peter")) {
+//   console.log(`You have friend names Peter`);
+// } else {
+//   console.log(`You don't have any friend names Peter`);
+// }
+
+// Object = use at unordered list, retrieve value based on name
+// has 5 key pairs, each key has value, each key can define as property
+// property of firstname with value prabu
+const prabu = {
+  firstName: "Prabu",
+  lastName: "Hadi",
+  age: currentYear - 1999,
+  job: "Web Developer",
+  friends: ["Moona", "Kaela", "Zeta"],
+};

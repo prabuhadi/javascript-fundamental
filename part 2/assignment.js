@@ -97,3 +97,13 @@ if (!neighbours.includes("Germany")) {
 } else {
   console.log(`Probably not a central European Country`);
 }
+
+// Assignment 7
+const myCountry = {
+  country: "Indonesia",
+  capital: "Jakarta",
+  language: "Bahasa",
+  population: 280,
+  neighbours: ["Japan", "USA", "Portugal", "China"],
+};
+console.log(myCountry);
