@@ -291,3 +291,10 @@ console.log(prabu.getSummery());
 //     prabu.hasDriverLicense ? "a" : "no"
 //   } driver's license`
 // );
+
+// Loop Iteration
+// for loops keeps running while condition is TRUE (3 condition) counter
+// loop statement has 3 parts (initial value, logical condition boolean, increase initial value)
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+}

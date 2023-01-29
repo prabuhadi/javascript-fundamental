@@ -139,3 +139,8 @@ const myCountry = {
 };
 console.log(myCountry.describe());
 console.log(myCountry.checkIsland());
+
+// Assignment 10
+for (let vote = 1; vote <= 50; vote++) {
+  console.log(`Vote number ${vote} is currently voting`);
+}
