@@ -160,3 +160,22 @@ for (let i = 0; i < populations.length; i++) {
   percentages2.push(calc);
 }
 console.log(percentages2);
+
+// Assignment 12
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`---------- Starting Exercise ${exercise}`);
+
+//   for (let rep = 0; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+//   }
+// }
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let neighbour = 0; neighbour < listOfNeighbours[i].length; neighbour++)
+    console.log(`Neigbour: ${listOfNeighbours[i][neighbour]}`);
+}

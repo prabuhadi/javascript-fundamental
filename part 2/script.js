@@ -299,15 +299,15 @@ console.log(prabu.getSummery());
 // }
 
 // Loop Array
-const prabuArray = [
-  "Prabu",
-  "Hadi",
-  currentYear - 1999,
-  "Developer",
-  ["Kaela", "Moona", "Zeta"],
-  true,
-];
-console.log(prabuArray);
+// const prabuArray = [
+//   "Prabu",
+//   "Hadi",
+//   currentYear - 1999,
+//   "Developer",
+//   ["Kaela", "Moona", "Zeta"],
+//   true,
+// ];
+// console.log(prabuArray);
 
 // console.log(prabuArray[0]);
 // console.log(prabuArray[1]);
@@ -341,16 +341,43 @@ for (let i = 0; i < year4.length; i++) {
 console.log(age4);
 
 // loop continue and break
-console.log(`===== ONLY STRING =====`);
-for (let i = 0; i < prabuArray.length; i++) {
-  if (typeof prabuArray[i] !== "string") continue;
+// console.log(`===== ONLY STRING =====`);
+// for (let i = 0; i < prabuArray.length; i++) {
+//   if (typeof prabuArray[i] !== "string") continue;
 
-  console.log(prabuArray[i], typeof prabuArray[i]); // this code not even reach because continue
-}
+//   console.log(prabuArray[i], typeof prabuArray[i]); // this code not even reach because continue
+// }
 
-console.log(`===== BREAK WITH NUMBER =====`);
-for (let i = 0; i < prabuArray.length; i++) {
-  if (typeof prabuArray[i] === "number") break;
+// console.log(`===== BREAK WITH NUMBER =====`);
+// for (let i = 0; i < prabuArray.length; i++) {
+//   if (typeof prabuArray[i] === "number") break;
 
-  console.log(prabuArray[i], typeof prabuArray[i]); // this code not even reach because break
-}
+//   console.log(prabuArray[i], typeof prabuArray[i]); // this code not even reach because break
+// }
+
+// Loop Backwards
+const prabuArray = [
+  "Prabu",
+  "Hadi",
+  currentYear - 1999,
+  "Developer",
+  ["Kaela", "Moona", "Zeta"],
+  true,
+];
+
+// 0, 1, 2, ... 4
+// 4, 3, ... 0
+
+// for (let i = prabuArray.length - 1; i >= 0; i--) {
+//   // increment (++) decrement (--)
+//   console.log(i, prabuArray[i]);
+// }
+
+// Loop inside loop
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`---------- Starting Exercise ${exercise}`);
+
+//   for (let rep = 0; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+//   }
+// }
