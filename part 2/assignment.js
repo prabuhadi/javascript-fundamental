@@ -146,20 +146,20 @@ console.log(myCountry.checkIsland());
 // }
 
 // Assignment 11
-const populations = [
-  populationChina,
-  populationPortugal,
-  populationUSA,
-  populationJapan,
-];
+// const populations = [
+//   populationChina,
+//   populationPortugal,
+//   populationUSA,
+//   populationJapan,
+// ];
 
-const percentages2 = [];
+// const percentages2 = [];
 
-for (let i = 0; i < populations.length; i++) {
-  const calc = percentageOfWorld1(populations[i]);
-  percentages2.push(calc);
-}
-console.log(percentages2);
+// for (let i = 0; i < populations.length; i++) {
+//   const calc = percentageOfWorld1(populations[i]);
+//   percentages2.push(calc);
+// }
+// console.log(percentages2);
 
 // Assignment 12
 const listOfNeighbours = [
@@ -179,3 +179,21 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
   for (let neighbour = 0; neighbour < listOfNeighbours[i].length; neighbour++)
     console.log(`Neigbour: ${listOfNeighbours[i][neighbour]}`);
 }
+
+// Assignment 13
+const populations = [
+  populationChina,
+  populationPortugal,
+  populationUSA,
+  populationJapan,
+];
+
+const percentages3 = [];
+
+let i = 0;
+while (i < populations.length) {
+  const calc = percentageOfWorld1(populations[i]);
+  percentages3.push(calc);
+  i++;
+}
+console.log(percentages3);
