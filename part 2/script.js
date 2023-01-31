@@ -53,7 +53,7 @@ const calcAge2 = function (birthYear) {
 };
 // console.log(calcAge2(1999));
 
-const age2 = calcAge2(1999);
+const ages2 = calcAge2(1999);
 
 // console.log(age1, age2);
 
@@ -162,14 +162,13 @@ const ages = [
 const friend = ["Michael", "Steven", "Peter"];
 const newLength = friend.push("Jane", "Ane", "Olive"); // Adding Last
 // console.log(newLength);
-
 friend.unshift("Rodriges"); // Adding First
 
 // Remove element
-friend.pop(); // Last
-const popped = friend.pop(); // Last
+friend.pop(); // Remove Last
+const popped = friend.pop(); // Remove Last
 // console.log(popped);
-friend.shift(); // First
+friend.shift(); // Remove First
 // console.log(friend);
 
 // console.log(friend.indexOf("Jane"));
@@ -295,6 +294,63 @@ console.log(prabu.getSummery());
 // Loop Iteration
 // for loops keeps running while condition is TRUE (3 condition) counter
 // loop statement has 3 parts (initial value, logical condition boolean, increase initial value)
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+// }
+
+// Loop Array
+const prabuArray = [
+  "Prabu",
+  "Hadi",
+  currentYear - 1999,
+  "Developer",
+  ["Kaela", "Moona", "Zeta"],
+  true,
+];
+console.log(prabuArray);
+
+// console.log(prabuArray[0]);
+// console.log(prabuArray[1]);
+// ...
+// console.log(prabuArray[4]);
+// console.log(prabuArray[5]); is not exist
+
+// create empty array
+const types = [];
+
+// for (let i = 0; i < prabuArray.length; i++) {
+//   // Reading from prabuArray
+//   console.log(prabuArray[i], typeof prabuArray[i]);
+
+//   // Filling types array
+//   // types[i] = typeof prabuArray[i];
+//   types.push(typeof prabuArray[i]);
+// }
+console.log(types);
+
+// types[0]='string'
+// types[1]='string'
+// types[2]='number'
+
+const year4 = [1991, 1999, 2007, 2022];
+const age4 = [];
+
+for (let i = 0; i < year4.length; i++) {
+  age4.push(2037 - year4[i]);
+}
+console.log(age4);
+
+// loop continue and break
+console.log(`===== ONLY STRING =====`);
+for (let i = 0; i < prabuArray.length; i++) {
+  if (typeof prabuArray[i] !== "string") continue;
+
+  console.log(prabuArray[i], typeof prabuArray[i]); // this code not even reach because continue
+}
+
+console.log(`===== BREAK WITH NUMBER =====`);
+for (let i = 0; i < prabuArray.length; i++) {
+  if (typeof prabuArray[i] === "number") break;
+
+  console.log(prabuArray[i], typeof prabuArray[i]); // this code not even reach because break
 }

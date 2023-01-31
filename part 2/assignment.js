@@ -20,7 +20,7 @@ const describeEngland = describeCountry("England", 80, "London");
 // };
 
 const percentageOfWorld1 = function (population) {
-  return (countryPopulation / 7900) * 100;
+  return (population / 7900) * 100; // countryPupulation change to population
 };
 
 // const chinaPopulation = worldPopulation(1441);
@@ -68,21 +68,21 @@ const populationChina = 1444;
 const populationPortugal = 10;
 const populationUSA = 332;
 const populationJapan = 127;
-const populations = [
-  populationChina,
-  populationPortugal,
-  populationUSA,
-  populationJapan,
-];
-console.log(populations.length === 4);
+// const populations = [
+//   populationChina,
+//   populationPortugal,
+//   populationUSA,
+//   populationJapan,
+// ];
+// console.log(populations.length === 4);
 
-const percentages = [
-  percentageOfWorld2(populations[0]),
-  percentageOfWorld2(populations[1]),
-  percentageOfWorld2(populations[2]),
-  percentageOfWorld2(populations[3]),
-];
-console.log(percentages);
+// const percentages = [
+//   percentageOfWorld2(populations[0]),
+//   percentageOfWorld2(populations[1]),
+//   percentageOfWorld2(populations[2]),
+//   percentageOfWorld2(populations[3]),
+// ];
+// console.log(percentages);
 
 // Assignment 6
 const neighbours = ["Japan", "USA", "Portugal", "China"];
@@ -141,6 +141,22 @@ console.log(myCountry.describe());
 console.log(myCountry.checkIsland());
 
 // Assignment 10
-for (let vote = 1; vote <= 50; vote++) {
-  console.log(`Vote number ${vote} is currently voting`);
+// for (let vote = 1; vote <= 50; vote++) {
+//   console.log(`Vote number ${vote} is currently voting`);
+// }
+
+// Assignment 11
+const populations = [
+  populationChina,
+  populationPortugal,
+  populationUSA,
+  populationJapan,
+];
+
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+  const calc = percentageOfWorld1(populations[i]);
+  percentages2.push(calc);
 }
+console.log(percentages2);
