@@ -51,18 +51,19 @@ scoreKoala = calcAverage(23, 34, 27);
 const calcTip2 = (bill) =>
   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
 // console.log(calcTip(100));
 
-const bills = [125, 555, 44];
-const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(bills, tip);
-const total = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
-console.log(total);
+// const bills = [125, 555, 44];
+// const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(bills, tip);
+// const total = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
+// console.log(total);
 
 // Coding Challange #3
+
 const mark = {
   fullName: "Mark Miller",
   mass: 78,
@@ -92,3 +93,33 @@ console.log(
     testBMI ? "higher" : "lower"
   } than ${mark.fullName} BMI ${mark.calcBMI()}`
 );
+
+// Coding Challange #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills);
+console.log(tips);
+console.log(totals);
+
+const calcAverages = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    // sum = sum + arr[i]; or can be
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+console.log(calcAverages(bills));
+console.log(calcAverages(tips));
+console.log(calcAverages(totals));
